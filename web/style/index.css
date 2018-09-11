@@ -1,0 +1,50 @@
+/* 
+    Created on : 9 Sep, 2018, 5:44:28 PM
+    Author     : sam
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #333; 
+}
+
+.head {
+    font-weight: 300;
+    font-size: 5em;
+    color: #707075;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #707075;
+    font-size: 7em;
+    display: inline-block;
+    border: 2px #707075 solid;
+    border-radius: 50px;
+    padding: 50px;
+    margin: 120px;
+}
+
+a:link {
+    
+}
+
+a:visited {
+
+}
+
+a:hover {
+    color: rgba(150,150,0,0.5);
+    border-color: rgba(150,150,0,0.5);
+    transition: color 1s linear;
+}
+
+a:active {
+    color: #000;
+    background-color: rgba(150,150,0,0.5);
+}
