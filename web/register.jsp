@@ -28,12 +28,14 @@
                             <label class="gender">Male<input type="radio" checked="checked" value="Male" name="gender"><span class="checkmark"></span></label>
                             <label class="gender"> Female<input type="radio" checked="checked" value="Female" name="gender"><span class="checkmark"></span></label>
                             <select name="domain">
+                                <option value="none" selected="" disabled="">Select Domain</option>
                                 <option value="CSE">Computer Science Engineering</option>
                                 <option value="IT">Information Technology Engineering</option>
                                 <option value="MECH">Mechanical Engineering</option>
                                 <option value="EEE">Electrical Engineering</option>
                             </select>
                             <select name="role">
+                                <option value="none" selected="" disabled="">Select Role</option>
                                 <option value="admin">Admin</option>
                                 <option value="owner">Owner</option>
                                 <option value="user">User</option>
