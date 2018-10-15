@@ -17,6 +17,7 @@
 <%
     String name = request.getParameter("username");
     String pass = request.getParameter("password");
+    String role = request.getParameter("role");
     String URL = "jdbc:mysql://localhost:3306/user_account";
     Connection conn = null;
     Statement stm = null;
@@ -29,14 +30,20 @@
         stm = conn.createStatement();
         rs = stm.executeQuery("select * from users where name='"+name+"' and pass='"+pass+"'");
         
-        if(name.equals("sam") && pass.equals("admin")) {
-            response.sendRedirect("owner.jsp");
-        } else if(rs.next()) {
+        boolean admin = role.equals("admin");
+        boolean owner = role.equals("owner");
+        boolean user = role.equals("user");
+        
+        if(name.equals("sam") && pass.equals("admin") && admin) {
+            response.sendRedirect("admin.jsp");
+        } else if(rs.next() && user) {
             response.sendRedirect("home.jsp");
+        } else if(rs.next() && owner) {
+            response.sendRedirect("owner.jsp");
         } else {
+            System.out.println("Wrong username or password!");
             response.sendRedirect("login.jsp");
-            System.out.println("ERROR");
-        }
+        } conn.close();
     } catch (Exception e) {
         e.printStackTrace();
     }

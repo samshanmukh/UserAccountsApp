@@ -5,7 +5,7 @@
 
 
 body {
-  font-family: monospace, sans-serif;
+/*   font-family: monospace, sans-serif; */
   margin: 0;
   padding: 0;
   background: #e2e2e5;
@@ -44,7 +44,7 @@ body {
   width: 50%;
 }
 .form {
-  margin: 40px;
+  margin: 20px 40px;
   position: absolute;
 }
 label {
@@ -69,11 +69,14 @@ input {
 input::-moz-focus-inner { 
   border: 0; 
 }
+
 #login, #signup {
   color: #707075;
   margin-top: 20px;
   transition: color 1s;
+  border-radius: 20px;
 }
+
 #login:focus, #signup:focus {
   color: #d0d0d2;
 }
@@ -82,4 +85,17 @@ input::-moz-focus-inner {
 }
 #login:active, #signup:active {
     color: #707075;
+}
+
+/*select option*/ 
+
+select {
+    outline: none;
+    background: transparent;
+    color: #707075;
+    font-size: 20px;
+    border: 2px #333 solid;
+    width: 100%;
+    padding: 5px 38px;
+    margin-top: 10px;
 }

@@ -45,7 +45,7 @@ body {
   margin: 70px 60px 60px;
 }
 .form {
-  margin: 40px;
+  margin: 20px 40px;
   position: absolute;
 }
 input {
@@ -116,6 +116,7 @@ input::-moz-focus-inner {
   color: #707075;
   margin-top: 10px;
   transition: color 1s;
+  border-radius: 20px;
 }
 #login:focus, #submit:focus, #reset:focus {
   color: #d0d0d2;
@@ -132,7 +133,7 @@ input::-moz-focus-inner {
 select {
     outline: none;
     background: transparent;
-    color: #F2F2F2;
+    color: #707075;
     font-size: 20px;
     border: 2px #333 solid;
     width: 100%;

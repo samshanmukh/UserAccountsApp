@@ -22,12 +22,14 @@
                             <input type="text" name="username" placeholder="Username" id="username" required><br><br>
                             <input type="password" name="password" placeholder="Password" id="password" required>
                             <select name="role">
+                                <option value="none" selected="" disabled="">select your role</option>
                                 <option value="user">User</option>
                                 <option value="admin">Admin</option>
                                 <option value="owner">Owner</option>
                             </select>
                             <input type="submit" name="submit" id="login" value="Login"><br>
                             <input type="button" onclick="window.location='register.jsp'" name="signup" id="signup" value="SignUp">
+                            <!--<script type="text/javascript">alert("wrong username and password");</script>-->
                         </div>
                     </div>
                 </div>
